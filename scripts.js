@@ -13,6 +13,7 @@ function duplicate() {
     newLi.appendChild(check)
     
     let label = document.createElement("label")
+    label.textContent = newInput.value
     newLi.appendChild(label)
 
     let span = document.createElement("SPAN");
@@ -22,9 +23,12 @@ function duplicate() {
         list.removeChild(this.parentNode)
     }
     newLi.appendChild(span)
-}
 
-function checked () {
-    
+    check.onchange = function() {
+        if (this.checked) {
+            label.style.textDecoration = "line-through"
+        } else {
+            label.style.textDecoration = "none"
+        }
+    }
 }
-
