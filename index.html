@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>To-Do List</title>
 </head>
 <body>
     <header>
         <h2>To-Do List</h2>
     </header>
-    <div>
+
+    <section>
+        <div>
         <ul id="list">
             
             <li id="task">
                 <input type="text" id="newInput">
                 <button id="save" onClick="duplicate()">Salvar</button>
+                <p id="error"></p>
             </li>
             
         </ul>
     </div>
+    </section>
+    
 
     <script src="scripts.js"></script>
 </body>
