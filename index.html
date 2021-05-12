@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
     <title>To-Do List</title>
 </head>
 <body>
-    <header>
-        <h2>To-Do List</h2>
-    </header>
-
     <section>
         <div>
         <ul id="list">
             
-            <li id="task">
-                <input type="text" id="newInput">
-                <button id="save" onClick="duplicate()">Salvar</button>
+            <li id="task" style="list-style:none">
+                <input type="text" id="newInput" placeholder="Nova Tarefa...">
+                <button id="save" onClick="duplicate()">SALVAR</button>
                 <p id="error"></p>
             </li>
             
