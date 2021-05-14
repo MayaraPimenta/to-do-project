@@ -23,7 +23,7 @@ function duplicate() {
     newLi.appendChild(label)  
 
     let span = document.createElement("SPAN");
-    let txt = document.createTextNode("\u00D7")
+    let txt = document.createTextNode("X")
     span.appendChild(txt)
     span.onclick = function() {
         list.removeChild(this.parentNode)

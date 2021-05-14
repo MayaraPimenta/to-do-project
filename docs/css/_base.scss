@@ -20,7 +20,8 @@ body {
 
     ul {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-start;
 
         width: 23em;
         height: 35em;
@@ -29,16 +30,33 @@ body {
         background-color: $clipboard-color2;
     }
 
-    input {
+    #newInput {
+        font-family: $font;
+        font-size: $fs-s;
+        color: $primary-color;
+
         list-style-type: none;
         list-style: none;
 
-        width: 25em;
+        width: 20em;
         height: 4.375em;
         border-radius: 12px;
         border-width: 0em;
+        outline: none;
 
         margin-top: 2em;
-
     }
+
+    #newTask {
+        font-family: $font;
+        font-size: $fs-s;
+        color: $primary-color;
+
+        list-style-type: none;
+        list-style: none;
+
+        align-content: space-between;
+        padding: 0.5em;
+    }
+
 }
