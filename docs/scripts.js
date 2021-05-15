@@ -23,8 +23,7 @@ function duplicate() {
     newLi.appendChild(label)  
 
     let span = document.createElement("SPAN");
-    let txt = document.createTextNode("X")
-    span.appendChild(txt)
+    span.setAttribute("class", "far fa-trash-alt")
     span.onclick = function() {
         list.removeChild(this.parentNode)
     }
@@ -68,4 +67,6 @@ function duplicate() {
             label.style.textDecoration = "none"
         }
     }
+
+    newInput.value = ""
 }

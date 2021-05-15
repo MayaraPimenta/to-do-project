@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c891fe7ee.js" crossorigin="anonymous"></script>
     <title>To-Do List</title>
 </head>
 <body>
     <section>
-        <div>
+        <div id="mainDiv">
         <ul id="list">
             
             <li id="task" style="list-style:none">
-                <input type="text" id="newInput" placeholder="  Nova Tarefa...">
-                <button id="save" onClick="duplicate()">SALVAR</button>
-                <p id="error"></p>
+                <div id="innerDiv">
+                    <input type="text" id="newInput" placeholder="  Nova Tarefa...">
+                    <button id="save" onClick="duplicate()">SALVAR</button>
+                    <p id="error"></p>
+                </div>
             </li>
             
         </ul>

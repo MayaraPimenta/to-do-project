@@ -2,13 +2,13 @@ button {
     width: 5.5em;
     height: 2.5em;
     border-radius: 0.7em;
-    border-width: 0em;
-
+    border: 0.1em solid $background-color;
+    box-shadow: $shadow-1;
+    background-color: white;
+    
     font-family: $font;
     font-size: $fs-sm;
     color: $primary-color;
-
-    box-shadow: $shadow-1;
-
+    
     cursor: pointer;
 }

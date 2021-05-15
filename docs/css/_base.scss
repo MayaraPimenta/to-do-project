@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    div {
+    #mainDiv {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -12,7 +12,7 @@ body {
         width: 30em;
         height: 40em;
         border-radius: 17px;
-        margin-top: 5em;
+        margin-top: 3em;
 
         background-color: $clipboard-color1;
 
@@ -30,6 +30,18 @@ body {
         background-color: $clipboard-color2;
     }
 
+    #innerDiv {
+        background-color: white;
+
+        width: 20em;
+        height: 3.375em;
+        border-radius: 12px;
+        border-width: 0em;
+        outline: none;
+
+        margin-top: 2em;
+    }
+
     #newInput {
         font-family: $font;
         font-size: $fs-s;
@@ -38,13 +50,12 @@ body {
         list-style-type: none;
         list-style: none;
 
-        width: 20em;
-        height: 4.375em;
+        width: 14.5em;
+        height: 3.25em;
         border-radius: 12px;
         border-width: 0em;
         outline: none;
 
-        margin-top: 2em;
     }
 
     #newTask {
@@ -55,8 +66,16 @@ body {
         list-style-type: none;
         list-style: none;
 
-        align-content: space-between;
-        padding: 0.5em;
+        padding: 1.5em 0.5em 0.5em 0.5em;
+
+        span {
+            padding-left: 5em;
+            font-size: 0.8em; 
+        }
+
+        [type=checkbox] {
+            border: 0em solid white;
+        }
     }
 
 }
