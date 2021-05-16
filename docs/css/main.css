@@ -50,18 +50,6 @@ body ul {
   background-color: #FBF0AB;
 }
 
-body ul ::-webkit-scrollbar-track {
-  background: #FBF0AB;
-}
-
-body ul ::-webkit-scrollbar-track-piece {
-  background: white;
-}
-
-body ul ::-webkit-scrollbar-thumb:hover {
-  background: #ECECEC;
-}
-
 body #innerDiv {
   background-color: white;
   width: 20em;
