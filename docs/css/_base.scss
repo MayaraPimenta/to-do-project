@@ -15,7 +15,6 @@ body {
         margin-top: 3em;
 
         background-color: $clipboard-color1;
-
     }
 
     ul {
@@ -28,6 +27,18 @@ body {
         border-radius: 17px;
 
         background-color: $clipboard-color2;
+
+        ::-webkit-scrollbar-track{
+            background: $clipboard-color2;            ;
+        }    
+    
+        ::-webkit-scrollbar-track-piece{
+           background: white;
+        }
+    
+        ::-webkit-scrollbar-thumb:hover {
+           background: $background-color; 
+        }
     }
 
     #innerDiv {
@@ -66,16 +77,20 @@ body {
         list-style-type: none;
         list-style: none;
 
+        width: 19em;
+        display: grid;
+        grid-template-columns: 0.5fr 5fr 0.5fr;
+        gap: 0.5em;
+        align-items: center;
+            
         padding: 1.5em 0.5em 0.5em 0.5em;
 
         span {
-            padding-left: 5em;
-            font-size: 0.8em; 
-        }
+            font-size: $fs-sm;
 
-        [type=checkbox] {
-            border: 0em solid white;
+            cursor: pointer;
         }
     }
 
+   
 }

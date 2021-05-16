@@ -31,7 +31,7 @@ function duplicate() {
 
     let saveEdit = document.createElement("button")
     saveEdit.setAttribute("hidden", true)
-    saveEdit.textContent = "Salvar alterações"
+    saveEdit.textContent = "Alterar"
         saveEdit.onclick = function() {
             label.textContent = input.value
 
